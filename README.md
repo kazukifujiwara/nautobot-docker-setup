@@ -19,6 +19,8 @@ If not changed, nautobot can be accessed on port 8080.
 ## Plugins
 
 * nautobot-device-onboarding
+* nautobot_plugin_nornir
+* nautobot_golden_config
 
 ## Reference
 
