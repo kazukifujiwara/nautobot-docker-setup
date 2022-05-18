@@ -13,7 +13,7 @@ cd nautobot-docker-compose
 cp local.env.example local.env
 
 # If you don't want to create "admin" user with default setting, comment out the following.
-cat local.env | sed s/NAUTOBOT_CREATE_SUPERUSER=false/NAUTOBOT_CREATE_SUPERUSER=true/ > local.env
+sed -i -e "s/NAUTOBOT_CREATE_SUPERUSER=false/NAUTOBOT_CREATE_SUPERUSER=true/g" local.env
 
 # The following should be changed for proper security!
 # vi local.env
